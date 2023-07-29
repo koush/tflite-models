@@ -1,4 +1,4 @@
-for f in ssdlite_mobiledet_coco_qat_postprocess efficientdet_lite0_320_ptq efficientdet_lite1_384_ptq efficientdet_lite2_448_ptq efficientdet_lite3_512_ptq efficientdet_lite3x_640_ptq
+for f in tf2_ssd_mobilenet_v2_coco17_ptq ssdlite_mobiledet_coco_qat_postprocess efficientdet_lite0_320_ptq efficientdet_lite1_384_ptq efficientdet_lite2_448_ptq efficientdet_lite3_512_ptq efficientdet_lite3x_640_ptq
 do
     mkdir -p $f
     pushd $f
