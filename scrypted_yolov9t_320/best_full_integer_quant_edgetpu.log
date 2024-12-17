@@ -1,0 +1,28 @@
+Edge TPU Compiler version 16.0.384591198
+Input: runs/detect/train5/weights/best_saved_model/best_full_integer_quant.tflite
+Output: runs/detect/train5/weights/best_saved_model/best_full_integer_quant_edgetpu.tflite
+
+Operator                       Count      Status
+
+SOFTMAX                        1          More than one subgraph is not supported
+CONCATENATION                  2          More than one subgraph is not supported
+CONCATENATION                  30         Mapped to Edge TPU
+RESIZE_NEAREST_NEIGHBOR        2          Mapped to Edge TPU
+CONV_2D                        185        Mapped to Edge TPU
+CONV_2D                        1          More than one subgraph is not supported
+QUANTIZE                       2          Mapped to Edge TPU
+QUANTIZE                       1          More than one subgraph is not supported
+MAX_POOL_2D                    3          Mapped to Edge TPU
+ADD                            2          More than one subgraph is not supported
+ADD                            42         Mapped to Edge TPU
+LOGISTIC                       1          More than one subgraph is not supported
+PAD                            2          Mapped to Edge TPU
+TRANSPOSE                      2          Mapped to Edge TPU
+TRANSPOSE                      2          Operation is otherwise supported, but not mapped due to some unspecified limitation
+STRIDED_SLICE                  16         Mapped to Edge TPU
+STRIDED_SLICE                  4          More than one subgraph is not supported
+RESHAPE                        2          Mapped to Edge TPU
+RESHAPE                        4          More than one subgraph is not supported
+AVERAGE_POOL_2D                5          Mapped to Edge TPU
+MUL                            2          More than one subgraph is not supported
+SUB                            2          More than one subgraph is not supported
